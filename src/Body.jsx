@@ -11,26 +11,9 @@ const Body=()=>{
             <input type="submit"></input>
         </div>
         <div className="res-container">
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
-           <RestautantCard resName={mockDataList}/>
+           {
+            mockDataList.map(info => <RestautantCard key={info.id} resName = {info}/>)
+           }
             
         </div>
         </div>

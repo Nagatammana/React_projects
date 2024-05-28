@@ -8,12 +8,12 @@ const RestautantCard = (props) => {
     // eslint-disable-next-line no-unsafe-optional-chaining
     return(
         <div className='card'>
-            <img className='img_logo' alt='img_logo' src= {"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resName.info.cloudinaryImageId}/>
+            <img className='img_logo' alt='img_logo' src= {"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resName.info?.cloudinaryImageId}/>
             <div className='card1'>
-            <h3>{resName.info.name}</h3>
-            <h4>{resName.info.cuisines.join(",")}</h4>
-            <h4>{resName.info.avgRating}</h4>
-            <h4>{resName.info.areaName}</h4>
+            <h3>{resName?.info.name}</h3>
+            <h4>{resName?.info.cuisines?.join(",")}</h4>
+            <h4>{resName?.info.avgRating}</h4>
+            <h4>{resName?.info.areaName}</h4>
             </div>
     
         </div>
